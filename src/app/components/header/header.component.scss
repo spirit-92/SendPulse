@@ -1,0 +1,11 @@
+.header-menu{
+  margin-right: 30px;
+  &__btn{
+    &:focus{
+      outline: none;
+    }
+    &:not(:first-child){
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<div class="main">
+  <section class="nav_bar">
+    <app-navbar></app-navbar>
+  </section>
+  <section class="header">
+    <div (click)="adaptMenu=!adaptMenu" class="adapt-menu" [ngClass]="{active:adaptMenu}">
+      <span class="adapt-menu__line-1"></span>
+      <span class="adapt-menu__line-2"></span>
+      <span class="adapt-menu__line-2"></span>
+    </div>
+    <app-header></app-header>
+  </section>
+  <section class="main-content">
+    <app-main></app-main>
+  </section>
+  <div *ngIf="adaptMenu" class="adapt__menu-active">
+    <div class="container-ul">
+      <ul class="adapt-menu__ul">
+        <li (click)="adaptMenu=!adaptMenu" >
+          <a href="#">Dashboard</a>
+        </li>
+        <li (click)="adaptMenu=!adaptMenu">
+          <a href="#">Social Feed</a>
+        </li>
+        <li (click)="adaptMenu=!adaptMenu">
+          <a href="#">Invite Friends</a>
+        </li>
+        <li (click)="adaptMenu =!adaptMenu">
+          <a href="#">Settings</a>
+        </li>
+        <li (click)="adaptMenu = !adaptMenu">
+          <a href="#">Log out</a>
+        </li>
+      </ul>
+    </div>
+    <div (click)="adaptMenu=!adaptMenu" class="placeholder-menu"></div>
+  </div>
+</div>

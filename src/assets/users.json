@@ -1,0 +1,95 @@
+[
+  {
+    "name" : "@abhisek.daas",
+    "social_networks": "Facebook",
+    "classBg": "facebook",
+    "avatar": "../../../assets/usersIcon/user1.png",
+    "rate": "+4",
+    "arrow": true,
+    "followers": "1,701",
+    "popularity_in": "followers",
+    "icon": "../../../assets/brendIcon/Facebook.svg",
+    "filterDay": "week"
+  },
+  {
+    "name" : "@wholetthedasout",
+    "social_networks": "Twitter",
+    "classBg": "twitter",
+    "avatar": "../../../assets/usersIcon/user2.png",
+    "rate": "-3",
+    "arrow": false,
+    "followers": "1,567",
+    "popularity_in": "followers",
+    "icon": "../../../assets/brendIcon/Twitter.svg",
+    "filterDay": "month"
+  },
+  {
+    "name" : "@wholetthedasout",
+    "social_networks": "Instagram",
+    "classBg": "instagram",
+    "avatar": "../../../assets/usersIcon/user3.png",
+    "rate": "+11",
+    "arrow": true,
+    "followers": "1,567",
+    "popularity_in": "followers",
+    "icon": "../../../assets/brendIcon/Instagram.svg",
+    "filterDay": "week"
+  },{
+  "name" : "@abhisekd3",
+  "social_networks": "LinkedIn",
+  "classBg": "linkedIn",
+  "avatar": "../../../assets/usersIcon/user4.png",
+  "rate": "+39",
+  "arrow": true,
+  "followers": "2,160",
+  "popularity_in": "followers",
+  "icon": "../../../assets/brendIcon/LinkedIn.svg",
+  "filterDay": "week"
+},
+  {
+    "name" : "@TheAbhisekD",
+    "social_networks": "YouTube",
+    "classBg": "youTube",
+    "avatar": "../../../assets/usersIcon/user5.png",
+    "rate": "+22",
+    "arrow": true,
+    "followers": "3,190",
+    "popularity_in": "SUBSCRIBERS",
+    "icon": "../../../assets/brendIcon/Youtube.svg",
+    "filterDay": "month"
+  },
+  {
+    "name" : "@abhisekd",
+    "social_networks": "Snapchat",
+    "classBg": "snapchat",
+    "avatar": "../../../assets/usersIcon/user6.png",
+    "rate": null,
+    "arrow": null,
+    "followers": "8,780",
+    "popularity_in": "SNAP SCORE",
+    "icon": "../../../assets/brendIcon/Snapchat-color.svg",
+    "filterDay": "week"
+  },
+  {
+  "name" : "@+AbhisekDas",
+  "social_networks": "Google+",
+  "classBg": "google",
+  "avatar": "../../../assets/usersIcon/user7.png",
+  "rate": null,
+  "arrow": null,
+  "followers": "1,033",
+  "popularity_in": "FOLLOWERS",
+  "icon": "../../../assets/brendIcon/GooglePlus.svg",
+    "filterDay": "month"
+},{
+  "name" : "@131613922824522136...",
+  "social_networks": "Vine",
+  "classBg": "vine",
+  "avatar": "../../../assets/usersIcon/user8.png",
+  "rate": null,
+  "arrow": null,
+  "followers": "3,073",
+  "popularity_in": "LOOPS",
+  "icon": "../../../assets/brendIcon/Vine.svg",
+  "filterDay": "week"
+}]

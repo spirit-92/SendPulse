@@ -1,0 +1,58 @@
+<div class="container-main">
+  <div class="top-content">
+    <a class="email-link" href="#">@ABHISEK.DAS</a>
+    <button (click)="showModal = !showModal" class="add-profile">+ Add Social Profile</button>
+  </div>
+  <div class="container__ul-filter">
+  <ul class="date-filter__ul">
+    <li class="date-filter__ul__li"><button (click)="toggleFilter('Last_day')">Last day</button></li>
+    <li class="date-filter__ul__li"><button (click)="toggleFilter('Week')">Week</button></li>
+    <li class="date-filter__ul__li"><button (click)="toggleFilter('Month')">Month</button></li>
+  </ul>
+    <span  #activeLine class="date-filter__ul__line"></span>
+  </div>
+  <ul  class="container-users">
+      <li @fade *ngFor="let user of users">
+        <div class="card {{user.classBg}}">
+          <div class="brand-icon">
+            <img src="{{user.icon}}" alt="brand">
+          </div>
+          <div class="user-followers">
+            <p class="user-followers__number">{{user.followers}}</p>
+            <p class="user-followers__description">{{user.popularity_in}}</p>
+          </div>
+          <div *ngIf="user.rate" class="user-rate">
+            <p class="user_rating">{{user.rate}}</p>
+            <img *ngIf="user.arrow" src="../../../assets/brendIcon/arrow-up.svg" alt="rate">
+            <img *ngIf="!user.arrow" src="../../../assets/brendIcon/arrow-down.svg" alt="rate">
+          </div>
+        </div>
+        <div class="user-information">
+          <img src="{{user.avatar}}" alt="avatar">
+          <div class="user-information__description">
+          <p class="user-social">{{user.social_networks}}</p>
+          <p class="user-name">{{user.name}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<!--modal-->
+<div @fade *ngIf="showModal" class="modal">
+  <div (click)="showModal = !showModal" class="modal-placeholder"> </div>
+    <div class="container-addProfile">
+      <div (click)="showModal = !showModal" class="close-modal"></div>
+      <h3 class="addSocial">Add Social Profile</h3>
+      <p class="social-description">Add new social profile for tracking</p>
+      <form action="#">
+        <label for="emailUser" class="urlAdd">Url</label>
+        <input id="emailUser" class="emailUser" type="email" name="https://twitter.com/username" placeholder="https://twitter.com/username">
+        <div class="btn-lookup">
+        <button class="lookup" type="submit">Lookup</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+
